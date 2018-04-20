@@ -1,0 +1,398 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "AddPageValue",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_idx",
+				"type": "uint256"
+			}
+		],
+		"name": "addPageValue",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_manager",
+				"type": "address"
+			}
+		],
+		"name": "changeManager",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_twitterId",
+				"type": "string"
+			}
+		],
+		"name": "newPage",
+		"outputs": [
+			{
+				"name": "idx",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_idx",
+				"type": "uint256"
+			}
+		],
+		"name": "sendPageEther",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_price",
+				"type": "uint256"
+			}
+		],
+		"name": "setCharacterPrice",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_page_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_letter_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_key",
+				"type": "uint256"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "setLetterAttribute",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_page_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_letter_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_score",
+				"type": "uint256"
+			}
+		],
+		"name": "setLetterScore",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_receiver",
+				"type": "address"
+			}
+		],
+		"name": "setPageReceiver",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "page_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "letter_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "contents",
+				"type": "string"
+			}
+		],
+		"name": "Publish",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "page_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "letter_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "score",
+				"type": "uint256"
+			}
+		],
+		"name": "SetLetterScore",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "SetCharacterPrice",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_page_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_contents",
+				"type": "string"
+			}
+		],
+		"name": "writeLetter",
+		"outputs": [
+			{
+				"name": "idx",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "page_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "letter_idx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "key",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "SetLetterAttribute",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_page_idx",
+				"type": "uint256"
+			},
+			{
+				"name": "_letter_idx",
+				"type": "uint256"
+			}
+		],
+		"name": "getLetterContents",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_page_idx",
+				"type": "uint256"
+			}
+		],
+		"name": "getLettersLength",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getPagesLength",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "getPageTwitterId",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "manager",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pages",
+		"outputs": [
+			{
+				"name": "twitterId",
+				"type": "string"
+			},
+			{
+				"name": "receiver",
+				"type": "address"
+			},
+			{
+				"name": "balance",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

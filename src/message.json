@@ -1,0 +1,65 @@
+{
+  "한국어": {
+    "message": {
+      "title": "제목입니다.",
+      "subtitle": "당신의 연예인에게 편지를 쓰세요",
+      "subtitle2": "당신의 편지를 공유하세요"
+    }
+  },
+  "EN": {
+    "message": {
+      "title": "title",
+      "subtitle": "Write a letter to your entertainer",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "中文": {
+    "message": {
+      "title": "title",
+      "subtitle": "给你的艺人写一封信",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "日本": {
+    "message": {
+      "title": "title",
+      "subtitle": "あなたの芸能人に手紙を入れて",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "POR": {
+    "message": {
+      "title": "title",
+      "subtitle": "Napisz list do swojego artysty",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "ไทย": {
+    "message": {
+      "title": "title",
+      "subtitle": "اكتب رسالة إلى الفنان",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "FR": {
+    "message": {
+      "title": "title",
+      "subtitle": "Écrivez une lettre à votre artiste",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "РУ": {
+    "message": {
+      "title": "title",
+      "subtitle": "Напишите письмо своему конферансье",
+      "subtitle2": "Share your letter"
+    }
+  },
+  "ES": {
+    "message": {
+      "title": "title",
+      "subtitle": "Kirjoita kirje viihdyttäjälle",
+      "subtitle2": "Share your letter"
+    }
+  }
+}
